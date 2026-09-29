@@ -6,17 +6,26 @@
 	objectVersion = 90;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F25DAF42306434E800C8742F /* WordBookEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DAF41306434E800C8742F /* WordBookEntry.swift */; };
+		F25DAF44306435A700C8742F /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DAF43306435A700C8742F /* Word.swift */; };
+		F25DAF463064362600C8742F /* WordData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DAF453064362600C8742F /* WordData.swift */; };
+		F25DAF483064400F00C8742F /* TranslateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DAF473064400F00C8742F /* TranslateService.swift */; };
+		F2783EF5306B51C200ACFDEA /* MenuBarUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2783EF4306B51C200ACFDEA /* MenuBarUI.swift */; };
+		F2783EF7306B51FE00ACFDEA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2783EF6306B51FE00ACFDEA /* Constants.swift */; };
+		F2783EF9306B522F00ACFDEA /* MainUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2783EF8306B522F00ACFDEA /* MainUI.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		000000000000000000000120 /* WordBookApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordBookApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F25DAF41306434E800C8742F /* WordBookEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordBookEntry.swift; sourceTree = "<group>"; };
+		F25DAF43306435A700C8742F /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		F25DAF453064362600C8742F /* WordData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordData.swift; sourceTree = "<group>"; };
+		F25DAF473064400F00C8742F /* TranslateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateService.swift; sourceTree = "<group>"; };
+		F2783EF4306B51C200ACFDEA /* MenuBarUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarUI.swift; sourceTree = "<group>"; };
+		F2783EF6306B51FE00ACFDEA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F2783EF8306B522F00ACFDEA /* MainUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		000000000000000000000010 /* WordBookApp */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = WordBookApp;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		000000000000000130000000 /* Frameworks */ = {
@@ -30,7 +39,11 @@
 		000000000000000000000001 = {
 			isa = PBXGroup;
 			children = (
-				000000000000000000000010 /* WordBookApp */,
+				F25DAF3F306434AC00C8742F /* Shared */,
+				F25DAF3E3064349E00C8742F /* Views */,
+				F25DAF3D3064349200C8742F /* Services */,
+				F25DAF3B3064344F00C8742F /* App */,
+				F25DAF3C3064345A00C8742F /* Data */,
 				000000000000000000000020 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +54,48 @@
 				000000000000000000000120 /* WordBookApp.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F25DAF3B3064344F00C8742F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F25DAF41306434E800C8742F /* WordBookEntry.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F25DAF3C3064345A00C8742F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F25DAF43306435A700C8742F /* Word.swift */,
+				F25DAF453064362600C8742F /* WordData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F25DAF3D3064349200C8742F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F25DAF473064400F00C8742F /* TranslateService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F25DAF3E3064349E00C8742F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2783EF4306B51C200ACFDEA /* MenuBarUI.swift */,
+				F2783EF8306B522F00ACFDEA /* MainUI.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F25DAF3F306434AC00C8742F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F2783EF6306B51FE00ACFDEA /* Constants.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,9 +110,6 @@
 				000000000000000140000000 /* Resources */,
 			);
 			buildRules = (
-			);
-			fileSystemSynchronizedGroups = (
-				000000000000000000000010 /* WordBookApp */,
 			);
 			name = WordBookApp;
 			productName = MyApp;
@@ -76,6 +128,7 @@
 				TargetAttributes = {
 					000000000000000100000000 = {
 						CreatedOnToolsVersion = 26.3;
+						LastSwiftMigration = 2700;
 					};
 				};
 			};
@@ -110,6 +163,13 @@
 		000000000000000120000000 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
+				F25DAF483064400F00C8742F /* TranslateService.swift in Sources */,
+				F25DAF42306434E800C8742F /* WordBookEntry.swift in Sources */,
+				F25DAF44306435A700C8742F /* Word.swift in Sources */,
+				F2783EF5306B51C200ACFDEA /* MenuBarUI.swift in Sources */,
+				F2783EF9306B522F00ACFDEA /* MainUI.swift in Sources */,
+				F25DAF463064362600C8742F /* WordData.swift in Sources */,
+				F2783EF7306B51FE00ACFDEA /* Constants.swift in Sources */,
 			);
 		};
 /* End PBXSourcesBuildPhase section */
@@ -250,6 +310,7 @@
 		000000000000000111000000 /* Debug configuration for PBXNativeTarget "WordBookApp" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_APP_SANDBOX = YES;
@@ -278,6 +339,8 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
@@ -287,6 +350,7 @@
 		000000000000000112000000 /* Release configuration for PBXNativeTarget "WordBookApp" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_APP_SANDBOX = YES;
@@ -315,6 +379,7 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
