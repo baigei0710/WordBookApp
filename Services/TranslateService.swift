@@ -23,7 +23,7 @@ enum TranslationEngine: String, CaseIterable, Identifiable{
 }
 
 //多模型可切换翻译
-class getTranslation{
+class GetTranslation{
     
 }
 

@@ -7,10 +7,6 @@
 
 import Foundation
 
-
-
-
-@Observable
 class WordData{
     var words: [Word] = []
     init(){

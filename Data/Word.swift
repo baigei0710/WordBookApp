@@ -1,5 +1,5 @@
 //
-//  Words.swift
+//  Word.swift
 //  WordBookApp
 //
 //  Created by baigeii on 2026/9/24.
