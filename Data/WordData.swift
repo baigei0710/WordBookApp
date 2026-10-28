@@ -13,7 +13,7 @@ class WordData{
         
     }
     func addWord(originalWord: String) {
-        var translatedWord = Translate(word: originalWord) //TODO:连接到翻译函数
-        var word = Word(originalText: originalWord,translatedText: translatedWord)
+        //var translatedWord = Translate(word: originalWord) //TODO:连接到翻译函数
+        //var word = Word(originalText: originalWord,translatedText: translatedWord)
     }
 }

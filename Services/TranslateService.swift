@@ -87,7 +87,6 @@ class DeepLTranslationService: TranslationService {
             throw TranslationError.invalidURL
         }
         //写请求
-        //全是ai帮忙写的,确实得学习一下网络了XD
         var request = URLRequest(url:url)
         request.httpMethod = "POST"
         request.setValue("DeepL-Auth-Key \(apiKey)", forHTTPHeaderField: "Authorization")
